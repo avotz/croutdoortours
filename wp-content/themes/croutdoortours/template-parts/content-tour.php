@@ -60,11 +60,23 @@
         </div>
         <div class="tour-info">
              
-            <?php
-                the_content();
+            <ul id="tabs">
+                <li><a href="#" name="tab-description">Description</a></li>
+                <li><a href="#" name="tab-details">Details</a></li>
+            </ul>
 
-
-            ?>
+            <div id="content-tabs"> 
+                <div id="tab-description">
+                    <?php
+                    the_content(); ?>
+                </div>
+                <div id="tab-details">
+                <?php
+                    echo do_shortcode(rwmb_meta('rw_details')); ?>
+                
+                </div>
+                
+            </div>
            
         </div>
     </div>

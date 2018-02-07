@@ -17,6 +17,15 @@ function outdoortours_get_meta_box($meta_boxes)
 				'type' => 'image_advanced',
 				'name' => esc_html__('Gallery', 'outdoortours'),
 			),
+			array(
+				'name' => __('Details', 'outdoortours'),
+				'desc' => '',
+				'id' => $prefix . 'details',
+				'type' => 'wysiwyg',
+				'std' => '',
+				'class' => 'custom-class',
+				'clone' => false,
+			),
 		),
 	);
 
