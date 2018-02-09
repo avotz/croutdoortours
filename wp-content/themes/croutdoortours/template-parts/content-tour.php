@@ -63,7 +63,7 @@
             <ul id="tabs">
                 <li><a href="#" name="tab-description">Description</a></li>
                 <li><a href="#" name="tab-details">Details</a></li>
-                <li><a href="#" name="tab-book">Book</a></li>
+                <li><a href="#" name="tab-book" data-item="<?php the_title() ?>">Book</a></li>
             </ul>
 
             <div id="content-tabs"> 

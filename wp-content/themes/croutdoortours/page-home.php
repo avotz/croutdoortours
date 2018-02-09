@@ -30,12 +30,12 @@ get_header(); ?>
                         
                         <div class="banner-slide-info">
                             <h1 class="banner-slide-title">
-                                    Lorem ipsum dolor
+                                    Costa Rica Outdoors & Adventure
                             </h1>
-                            <p class="banner-slide-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <!-- <p class="banner-slide-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p> -->
                             <div class="banner-slide-buttons">
-                                <a href="#" class="btn">Learn More</a>
+                                <a href="#featured-tours" class="anchor btn">Learn More</a>
                             </div>
                         </div>
                         
@@ -44,12 +44,12 @@ get_header(); ?>
                         
                         <div class="banner-slide-info">
                             <h1 class="banner-slide-title">
-                                    Lorem ipsum dolor
+                                   Costa Rica Outdoors & Adventure
                             </h1>
-                            <p class="banner-slide-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <!-- <p class="banner-slide-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p> -->
                             <div class="banner-slide-buttons">
-                                <a href="#" class="btn">Learn More</a>
+                                <a href="#featured-tours" class="anchor btn">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ get_header(); ?>
                     
             </div>    
         </section>
-        <section class="info-top">
+        <!-- <section id="info-top" class="info-top">
             <div class="info-top-container">
                 <div class="info-top-content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
@@ -67,8 +67,8 @@ get_header(); ?>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/binoculares.jpg" alt="Image" />
                 </div>
             </div>
-        </section>
-        <section class="featured-items">
+        </section> -->
+        <section id="featured-tours" class="featured-items">
             <h1 class="featured-items-title">Featured Tours</h1>
             <div class="featured-items-container">
                 <div class="grid-sizer"></div>
@@ -145,22 +145,12 @@ get_header(); ?>
         </section>
        <section class="photos">
             <div class="photos-container">
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo.jpg" alt=""> </a>
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo2.jpg" alt=""> </a>
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo3.jpg" alt=""> </a>
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo4.jpg" alt=""> </a>
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo5.jpg" alt=""> </a>
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo6.jpg" alt=""> </a>
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo.jpg" alt=""> </a>
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo2.jpg" alt=""> </a>
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo3.jpg" alt=""> </a>
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo4.jpg" alt=""> </a>
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo5.jpg" alt=""> </a>
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo6.jpg" alt=""> </a>
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo.jpg" alt=""> </a>
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo2.jpg" alt=""> </a>
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo3.jpg" alt=""> </a>
-                <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo4.jpg" alt=""> </a>
+               <?php echo display_images_from_media_library(); ?>
+                         
+                         <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo.jpg" alt=""> </a>
+                        
+                        
+                      
             </div>
         </section>
 

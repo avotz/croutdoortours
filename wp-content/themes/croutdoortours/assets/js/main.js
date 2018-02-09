@@ -86,7 +86,34 @@
             $('#' + $(this).attr('name')).fadeIn(); // Show content for the current tab
         }
     });
+    $('#tabs a[name="tab-book"]').click(function (e) {
 
+        $('div#tab-book').find('input[name="your-subject"]').val('Inquire for ' + $(this).attr('data-item'));
+    });
+
+    // SMOOTH ANCHOR SCROLLING
+    var $root = $('html, body');
+    $('a.anchor').click(function (e) {
+        var href = $.attr(this, 'href');
+        if (typeof ($(href)) != 'undefined' && $(href).length > 0) {
+            var anchor = '';
+
+            if (href.indexOf("#") != -1) {
+                anchor = href.substring(href.lastIndexOf("#"));
+            }
+
+            if (anchor.length > 0) {
+                console.log($(anchor).offset().top);
+                console.log(anchor);
+                $root.animate({
+                    scrollTop: $(anchor).offset().top
+                }, 500, function () {
+                    window.location.hash = anchor;
+                });
+                e.preventDefault();
+            }
+        }
+    });
 
     function isHome() {
         return $('body').hasClass('home');

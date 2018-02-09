@@ -133,6 +133,42 @@ function croutdoortours_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'croutdoortours_scripts' );
 
+
+function get_images_from_media_library()
+{
+	$args = array(
+		'post_type' => 'attachment',
+		'post_mime_type' => 'image',
+		'post_status' => 'inherit',
+		'posts_per_page' => 16,
+		'orderby' => 'rand'
+	);
+	$query_images = new WP_Query($args);
+	$images = array();
+
+	foreach ($query_images->posts as $image) {
+		$images[] = wp_get_attachment_image_src($image->ID, 'medium')[0];
+		//$image->guid;
+	}
+	return $images;
+}
+function display_images_from_media_library()
+{
+
+	$imgs = get_images_from_media_library();
+	$html = '';
+	
+	foreach ($imgs as $img) {
+
+		$html .= '<a href="#" class="photos-item"><img src="' . $img . '" alt="Photo"> </a>';
+
+	}
+
+	//$html .= '</div>';
+
+	return $html;
+
+}
 /**
  * Implement the Custom Header feature.
  */
