@@ -63,6 +63,7 @@
             <ul id="tabs">
                 <li><a href="#" name="tab-description">Description</a></li>
                 <li><a href="#" name="tab-details">Details</a></li>
+                <li><a href="#" name="tab-book">Book</a></li>
             </ul>
 
             <div id="content-tabs"> 
@@ -74,6 +75,10 @@
                 <?php
                     echo do_shortcode(rwmb_meta('rw_details')); ?>
                 
+                </div>
+                <div id="tab-book">
+                    <?php echo do_shortcode('[contact-form-7 id="5" title="Contact form"]');
+                        ?>      
                 </div>
                 
             </div>
