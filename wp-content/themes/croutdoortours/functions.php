@@ -147,7 +147,7 @@ function get_images_from_media_library()
 	$images = array();
 
 	foreach ($query_images->posts as $image) {
-		$images[] = wp_get_attachment_image_src($image->ID, 'medium')[0];
+		$images[] = wp_get_attachment_image_src($image->ID, 'home-gallery')[0];
 		//$image->guid;
 	}
 	return $images;
