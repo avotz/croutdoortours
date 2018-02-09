@@ -34,7 +34,7 @@
                 </div>
                 <div class="footer-contact">
                     <h2 class="footer-social-title">Contact Us</h2>
-                    <a href="mailto::info@costaricaoutdoorstours.com" class="footer-contact-link">info@costaricaoutdoorstours.com</a>
+                    <a href="mailto::info@costaricaoutdoorstours.com" class="footer-contact-link">info@costaricaoutdoorstours.com</a><br>
                     <a href="mailto::reservations@costaricaoutdoorstours.com" class="footer-contact-link">reservations@costaricaoutdoorstours.com</a>
                     
                 </div>
