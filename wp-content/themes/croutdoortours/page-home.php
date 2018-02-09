@@ -146,11 +146,7 @@ get_header(); ?>
        <section class="photos">
             <div class="photos-container">
                <?php echo display_images_from_media_library(); ?>
-                         
-                         <a href="#" class="photos-item"><img src="<?php echo get_template_directory_uri(); ?>/img/photo.jpg" alt=""> </a>
                         
-                        
-                      
             </div>
         </section>
 
