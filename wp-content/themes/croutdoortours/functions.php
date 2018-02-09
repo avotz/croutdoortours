@@ -160,7 +160,7 @@ function display_images_from_media_library()
 	
 	foreach ($imgs as $img) {
 
-		$html .= '<a href="#" class="photos-item"><img src="' . $img . '" alt="Photo"> </a>';
+		$html .= '<div class="photos-item"><img src="' . $img . '" alt="Photo"> </div>';
 
 	}
 
