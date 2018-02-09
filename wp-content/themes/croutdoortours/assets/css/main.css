@@ -2118,3 +2118,27 @@ iframe {
 .pagination .nav-links a.current {
   background-color: #b5d41b;
 }
+.tours-filters .form-filters-tour {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.tours-filters .form-filters-tour .form-filters-tour-item {
+  max-width: 300px;
+  margin-bottom: 1rem;
+}

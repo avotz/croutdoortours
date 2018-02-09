@@ -115,6 +115,12 @@
         }
     });
 
+    var formFiltersTour = $('.form-filters-tour');
+   
+    $('select[name="tour-category"]').change(function (e) {
+        formFiltersTour.submit();
+    })
+
     function isHome() {
         return $('body').hasClass('home');
     }

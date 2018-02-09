@@ -13,6 +13,14 @@
  * @package croutdoortours
  */
 
+$categories = get_terms(array(
+    'taxonomy' => 'tour-category',
+    'hide_empty' => false
+
+));
+
+$categorySelected = get_query_var('tour-category');
+
 get_header(); ?>
 
 	<div class="main">
@@ -32,22 +40,56 @@ get_header(); ?>
 			?>
             </div><!-- #inner -->
           
-           
+           <div class="tours-filters">
+					<form method="get" action="<?php echo esc_url(home_url('/tours/?tour-category=' . $categorySelected)); ?>" class="form-filters-tour">
+						
+						<div class="form-filters-tour-item">
+						<label for="location">Choose tour category</label>
+							<select name="tour-category" id="tour-category" style="width: 100%">
+							    <option value=""></option>
+								<?php foreach ($categories as $cat) : ?>
+									<option value="<?php echo $cat->slug ?>" <?php if ($categorySelected == $cat->slug) echo 'selected' ?> ><?php echo $cat->name ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+					</form>
+					
+				</div>
             <div class="featured-items-container">
                 <div class="grid-sizer"></div>
                 <?php
                 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-                $args = array(
-                    'post_type' => 'tour',
+                if ($categorySelected) {
+                    $args = array(
+                        'post_type' => 'tour',
                         //'order' => 'ASC',
-                    'orderby' => array('menu_order' => 'ASC', 'title' => 'ASC'),
-                    'posts_per_page' => 12,
-                    'paged' => $paged,
+                        'orderby' => array('menu_order' => 'ASC', 'title' => 'ASC'),
+                        'posts_per_page' => 12,
+                        'paged' => $paged,
+                        'tax_query' => array(
+
+                            array(
+                                'taxonomy' => 'tour-category',
+                                'field' => 'slug',
+                                'terms' => $categorySelected,
+                            ),
+
+                        )
+
+                    );
+
+                } else {
+                    $args = array(
+                        'post_type' => 'tour',
+                        //'order' => 'ASC',
+                        'orderby' => array('menu_order' => 'ASC', 'title' => 'ASC'),
+                        'posts_per_page' => 12,
+                        'paged' => $paged,
 
 
-                );
-
+                    );
+                }
 
                 $items = new WP_Query($args);
                     // Pagination fix

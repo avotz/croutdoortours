@@ -133,11 +133,9 @@ get_header(); ?>
         <section class="info-bottom">
             <div class="info-bottom-container">
                 <div class="info-bottom-content">
-                    <h2>Lorem ipsum dolor sit amet</h2>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                   consequat. </p>
+                    <h2>The best experience requires the best!</h2>
+                   <p>
+                We are a company with a long history in the tourist environment, where our main objective is to provide you with a unique and enriching experience that you will tell again and again to your family and friends. Discover Costa Rica with us and let yourself be captured by what is outdoors!!</p>
                     <a href="<?php echo esc_url(home_url('/contact-us')); ?>" class="btn">Contact us</a>
                 </div>
                 

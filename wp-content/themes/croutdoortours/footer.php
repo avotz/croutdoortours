@@ -34,7 +34,8 @@
                 </div>
                 <div class="footer-contact">
                     <h2 class="footer-social-title">Contact Us</h2>
-                    <a href="mailto::info@costaricaoutdoortours.com" class="footer-contact-link">info@costaricaoutdoortours.com</a>
+                    <a href="mailto::info@costaricaoutdoorstours.com" class="footer-contact-link">info@costaricaoutdoorstours.com</a>
+                    <a href="mailto::reservations@costaricaoutdoorstours.com" class="footer-contact-link">reservations@costaricaoutdoorstours.com</a>
                     
                 </div>
                 
@@ -42,7 +43,7 @@
             <div class="footer-copyright">
                  <span class="copy">Copyright © 2018. All Rights Reserved.</span>   
                    
-                 <span class="avotz"><a href="http://www.avtoz.com" target="_blank"><i class="icon-avotz"></i></a></span>
+                 <span class="avotz"><a href="http://www.avotz.com" target="_blank"><i class="icon-avotz"></i></a></span>
                    
                 </div>
         </footer>
