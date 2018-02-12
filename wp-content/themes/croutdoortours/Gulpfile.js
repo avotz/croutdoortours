@@ -40,6 +40,7 @@ gulp.task('js', function () {
       /*'./assets/js/vendor/jquery.uniform.js',*/
      /*'./assets/js/vendor/sly.min.js',*/
     './assets/js/vendor/owl.carousel.js',
+    './assets/js/vendor/flatpickr.js',
       './assets/js/main.js'
 
     ])
@@ -60,7 +61,7 @@ gulp.task('stylus', function () {
 });
 
 gulp.task('css', function () {
-  gulp.src(['./assets/css/main.css','./assets/css/owl.carousel.css/'/*,'./assets/css/isotope.css'/*, './assets/css/magnific-popup.css',/*,'./assets/css/component.css'*/])
+  gulp.src(['./assets/css/main.css', './assets/css/owl.carousel.css/', './assets/css/flatpickr.min.css'/*,'./assets/css/isotope.css'/*, './assets/css/magnific-popup.css',/*,'./assets/css/component.css'*/])
     /*.pipe(minifyCSS({ keepSpecialComments: '*', keepBreaks: '*'}))*/
     .pipe(concat('style.css'))
     .pipe(gulp.dest('./'))

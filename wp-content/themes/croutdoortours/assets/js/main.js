@@ -121,6 +121,13 @@
         formFiltersTour.submit();
     })
 
+    $(".date").flatpickr({
+        minDate: "today",
+        onChange: function (selectedDates, dateStr, instance) {
+            //$('.filters').find('form').submit();
+        },
+    });
+
     function isHome() {
         return $('body').hasClass('home');
     }
