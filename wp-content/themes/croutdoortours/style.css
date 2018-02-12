@@ -1481,7 +1481,7 @@ iframe {
   float: left;
   height: 400px;
   width: 100%;
-  background-position-x: center;
+  background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
