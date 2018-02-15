@@ -135,7 +135,7 @@ get_header(); ?>
                 <div class="info-bottom-content">
                     <h2>The best experience requires the best!</h2>
                    <p>
-                We are a company with a long history in the tourist environment, where our main objective is to provide you with a unique and enriching experience that you will tell again and again to your family and friends. Discover Costa Rica with us and let yourself be captured by what is outdoors!!</p>
+                We are a company in the tourist environment since 2010, where our main objective is to provide you a unique and enriching experience that you will tell again and again to your family and friends. Discover Costa Rica with us and let yourself be captured by what is outdoors!!</p>
                     <a href="<?php echo esc_url(home_url('/contact-us')); ?>" class="btn">Contact us</a>
                 </div>
                 
