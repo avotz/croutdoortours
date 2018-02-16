@@ -53,6 +53,32 @@ get_header(); ?>
                             </div>
                         </div>
                     </div>
+                    <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner3.jpg');">
+                        
+                        <div class="banner-slide-info">
+                            <h1 class="banner-slide-title">
+                                   Costa Rica Outdoors & Adventure
+                            </h1>
+                            <!-- <p class="banner-slide-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p> -->
+                            <div class="banner-slide-buttons">
+                                <a href="#featured-tours" class="anchor btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/banner4.jpg');">
+                        
+                        <div class="banner-slide-info">
+                            <h1 class="banner-slide-title">
+                                   Costa Rica Outdoors & Adventure
+                            </h1>
+                            <!-- <p class="banner-slide-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. </p> -->
+                            <div class="banner-slide-buttons">
+                                <a href="#featured-tours" class="anchor btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
                 
                     
             </div>    
