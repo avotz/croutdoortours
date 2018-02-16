@@ -116,7 +116,7 @@ get_header(); ?>
                                 <a href="<?php the_permalink(); ?>" class="featured-items-item-overlay"></a>
                                 <a href="<?php the_permalink(); ?>" class="featured-items-item-link">
                                     <span class="featured-items-item-title"><?php the_title(); ?></span>
-                                    <span class="featured-items-item-icon"><i class="icon-neuter"></i></span>
+                                    <!-- <span class="featured-items-item-icon"><i class="icon-neuter"></i></span> -->
                                 </a>
                             
                          </div>
